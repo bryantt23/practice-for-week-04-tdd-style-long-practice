@@ -9,4 +9,8 @@ describe('reverseString', function () {
     const res = reverseString('fun');
     assert.equal(res, 'nuf');
   });
+  it('should return cba with abc input', function () {
+    const res = reverseString('abc');
+    assert.equal(res, 'cba');
+  });
 });
