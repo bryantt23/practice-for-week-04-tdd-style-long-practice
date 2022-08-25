@@ -11,4 +11,9 @@ describe('returnsThree', function () {
   });
 });
 
-describe('reciprocal', function () {});
+describe('reciprocal', function () {
+  it('should return 1/2 with 2 input', function () {
+    const res = reciprocal(2);
+    assert.equal(res, 1 / 2);
+  });
+});
