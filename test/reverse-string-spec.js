@@ -13,4 +13,9 @@ describe('reverseString', function () {
     const res = reverseString('abc');
     assert.equal(res, 'cba');
   });
+  it('should throw an error with number input', function () {
+    expect(function () {
+      reverseString(123);
+    }).to.throw('Not a string');
+  });
 });
