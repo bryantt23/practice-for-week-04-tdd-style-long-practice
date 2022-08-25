@@ -16,4 +16,8 @@ describe('reciprocal', function () {
     const res = reciprocal(2);
     assert.equal(res, 1 / 2);
   });
+  it('should return 1/100 with 100 input', function () {
+    const res = reciprocal(100);
+    assert.equal(res, 1 / 100);
+  });
 });
