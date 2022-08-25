@@ -20,4 +20,14 @@ describe('reciprocal', function () {
     const res = reciprocal(100);
     assert.equal(res, 1 / 100);
   });
+  it('should throw error with out of range input', function () {
+    expect(function () {
+      reciprocal(0);
+    }).to.throw('Number must be between 1 and 1000000');
+  });
+  it('should throw error with out of range input', function () {
+    expect(function () {
+      reciprocal(111111111);
+    }).to.throw('Number must be between 1 and 1000000');
+  });
 });
